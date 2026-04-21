@@ -5,7 +5,8 @@ from PIL import Image
 
 app = Flask(__name__)
 
-model = tf.keras.models.load_model("clean_model.h5")
+model.load_weights("weights.weights.h5")
+# model = tf.keras.models.load_model("clean_model.h5")
 
 classes = ["Barren", "Urban", "Vegetation", "Water"]
 
